@@ -43,6 +43,11 @@
     transition: background-color 0.3s;
 
     z-index: 100;
+
+    /* not selectable */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .navigation-option.current {
@@ -63,6 +68,11 @@
 .logo {
     background-color: #E95420;
     height: 100%;
+
+    /* not selectable */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /*
@@ -89,4 +99,8 @@
     border: none;
     border-top: 5px solid #B6AFA8;
 
+    /* not selectable */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
