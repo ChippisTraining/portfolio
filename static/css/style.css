@@ -83,3 +83,61 @@ body h1 {
 .content {
     margin-inline: 1rem;
 }
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.quote-img {
+    flex-shrink: 0;
+    width: 120px;
+}
+
+.quote-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.quote-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quote-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.quote-text {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.quote-overflow {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.quote-author {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+
