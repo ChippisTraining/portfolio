@@ -1,9 +1,10 @@
 .title {
     margin-top: -40px;
-    background-color: var(--index-title-bg);
+    /* background-color: var(--index-title-bg); */
+    background-image: url("./../assets/vortex.jpg");
+    object-position: center 60%;
 
-    margin-left: -10px;
-    margin-right: -10px;
+    width: 100%;
     
     padding-bottom: 10px;
 
