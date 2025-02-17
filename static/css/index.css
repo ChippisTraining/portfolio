@@ -1,6 +1,6 @@
 .title {
     margin-top: -40px;
-    background-color: #222222;
+    background-color: var(--index-title-bg);
 
     margin-left: -10px;
     margin-right: -10px;
@@ -15,6 +15,7 @@
     height: 250px;
     margin: 0 auto;
     display: block;
+    content: var(--title-logo);
 }
 
 .title h1 {
