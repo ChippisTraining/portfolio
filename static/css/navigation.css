@@ -10,7 +10,6 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -20,18 +19,24 @@
     z-index: 100;
 }
 
+.navigation-option:link,
+.navigation-option:visited,
 .navigation-option {
-    display: inline;
+    display: flex;
     margin: auto;
 
     height: inherit;
     width: 100%;
     text-align: center;
 
+    justify-content: center;
+    align-items: center;
+
     font-size: 1.5em;
 
     background-color: #E95420;
     color: #FFFFFF;
+    text-decoration: none;
 
     border: none;
 
