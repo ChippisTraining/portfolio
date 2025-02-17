@@ -1,6 +1,3 @@
-/*
-*  ### Navigation bar styles ###
-*/
 .header {
     position: fixed;
     top: 0;
@@ -55,34 +52,4 @@
 
 .header .item:active {
     background-color: var(--primary-active);
-}
-
-/*
-*  ### Sidebar bar styles ###
-*/
-.sidebar {
-    position: fixed;
-    background-color: #AEA79F;
-    top: 46px;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.sidebar-option {
-    height: 75px;
-    background-color: #BEB8B2;
-    color: #77216F;
-
-    border: none;
-    border-top: 5px solid #B6AFA8;
-
-    /* not selectable */
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
