@@ -48,6 +48,8 @@
 .navigation-option.current {
     background-color: #F29879;
     color: #DEDBD8;
+    pointer-events: none;
+    cursor: default;
 }
 
 .navigation-option:hover {
