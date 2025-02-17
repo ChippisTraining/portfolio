@@ -1,3 +1,4 @@
+/* Dark mode (Normal) */
 :root {
     --primary-color: #E95420;
     --primary-selection: #F29879; 
@@ -7,13 +8,36 @@
     --background-color: #333333;
     --primary-font-color: #FFFFFF;
 
+    --index-title-bg: #222222;
     --index-shadow-color: rgba(233, 84, 32, 0.45);
 
     --secondary-color: #77216F;
 
     --secondary-gray-light: #B6AFA8;
-    --secondary-gray-darker: #BEB8B2; 
+    --secondary-gray-dark: #BEB8B2; 
+    --secondary-gray-bg: #AEA79F;
 }
+
+/* Light Mode
+:root {
+    --primary-color: #F08763;
+    --primary-selection: #E95420; 
+    --primary-hover: #ED764D;
+    --primary-active: #EB6536;
+
+    --background-color: #f7f6f5;
+    --primary-font-color: #FFFFFF;
+
+    --index-title-bg: #6666;
+    --index-shadow-color: rgba(233, 84, 32, 0.45);
+
+    --secondary-color: #f7f6f5;
+
+    --secondary-gray-light: #a49b93;
+    --secondary-gray-dark: #b6afa8; 
+    --secondary-gray-bg: #eceae8;
+}
+*/
 
 body {
     background-color: var(--background-color);
