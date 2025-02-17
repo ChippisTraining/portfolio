@@ -1,11 +1,21 @@
+:root {
+    --primary-color: #E95420;
+    --primary-selection: #F29879; 
+    --primary-hover: #EB6536;
+    --primary-active: #F08763;
+
+    --background-color: #333333;
+    --primary-font-color: #FFFFFF;
+}
+
 body {
-    background-color: #333333;
+    background-color: var(--background-color);
     font-family: 'Ubuntu', Arial;
     height: 5000px;
     padding-top: 50px;
     padding-left: 200px;
 
-    color: #FFFFFF;
+    color: var(--primary-font-color);
 }
 
 body h1 {
