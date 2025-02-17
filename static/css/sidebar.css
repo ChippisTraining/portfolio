@@ -13,11 +13,11 @@
 
 .sidebar-option {
     height: 75px;
-    background-color: #BEB8B2;
-    color: #77216F;
+    background-color: var(--secondary-gray-dark);
+    color: var(--secondary-color);
 
     border: none;
-    border-top: 5px solid #B6AFA8;
+    border-top: 5px solid var(--secondary-gray-light);
 
     /* not selectable */
     -webkit-user-select: none; /* Safari */

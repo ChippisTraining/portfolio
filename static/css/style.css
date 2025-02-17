@@ -6,6 +6,13 @@
 
     --background-color: #333333;
     --primary-font-color: #FFFFFF;
+
+    --index-shadow-color: rgba(233, 84, 32, 0.45);
+
+    --secondary-color: #77216F;
+
+    --secondary-gray-light: #B6AFA8;
+    --secondary-gray-darker: #BEB8B2; 
 }
 
 body {
