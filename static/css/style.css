@@ -68,31 +68,42 @@ body h1 {
 }
 
 .title {
-    margin-top: -40px;
-    /* background-color: var(--index-title-bg); */
-    background-image: url("./../assets/vortex.jpg");
-    object-position: center 60%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
-    width: 100%;
+    margin-top: -40px;
+    width: 1fr;
+    height: 100vh;
     
     padding-bottom: 10px;
     margin-bottom: 20px;
-
+    
+    margin-left: -8px;
+    margin-right: -8px;
+    
     box-shadow: 0px 0px 10px 0px var(--index-shadow-color);
+    background-color: var(--index-title-bg);
 }
 
 .title img {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    display: block;
+    height: 140%;
+    object-fit: 100px 100px;
 }
 
-.title h1 {
-    margin-top: -60px;
-    text-align: center;
+.title-header {
+    position: absolute;
+}
 
-    margin-bottom: 0px;
+.title-header img {
+    display: none;
+}
+
+.title-header h1 {
+    font-family: 'Dalek', Arial;
+    font-size: 7em;
 }
 
 .content {
