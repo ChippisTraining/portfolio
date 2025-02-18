@@ -39,6 +39,20 @@
 }
 */
 
+@font-face {
+    font-family: 'DrWho42';
+    src: url('./../font/who/drWho42/Drwho42-og50.ttf') format('truetype'); /* Adjust path as needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dalek';
+    src: url('./../font/who/dalek-font/Dalek-7ZBB.ttf') format('truetype'); /* Adjust path as needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: var(--background-color);
     font-family: 'Ubuntu', Arial;
