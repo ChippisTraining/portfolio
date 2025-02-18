@@ -107,63 +107,46 @@ body h1 {
     margin-inline: 1rem;
 }
 
-.quote-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.quote {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.quote-img {
-    flex-shrink: 0;
-    width: 120px;
-}
-
-.quote-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.quote-content {
-    flex: 1;
+.quote-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+
+    padding-block: 8rem;
+    gap: 1rem;
 }
 
-.quote-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: 'Dalek', Arial;
+.quote-section-item {
+    display: flex;
+
+    gap: 1rem;
+    background: var(--secondary-gray-bg);
 }
 
-.quote-text {
-    font-size: 1em;
-    line-height: 1.5;
+.quote-section-item-img {
+    height: 15rem;
+    object-fit: cover;
 }
 
-.quote-overflow {
-    font-size: 0.9em;
-    color: #ccc;
+.quote-section-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1rem;
 }
 
-.quote-author {
-    font-size: 0.9em;
-    font-style: italic;
-    font-family: 'DrWho42', Arial;
-    color: #aaa;
-    margin-top: 10px;
+.quote-section-item-content-title {}
+
+.quote-section-item-content-text {
+    overflow: auto;
 }
 
+.quote-section-item-content-author {
+    padding-bottom: 1rem;
+}
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
