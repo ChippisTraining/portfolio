@@ -95,6 +95,10 @@ body h1 {
 
 .title-header {
     position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-header img {
@@ -104,8 +108,16 @@ body h1 {
 .title-header h1 {
     font-family: 'Dalek', Arial;
     font-size: 7em;
+
+    margin-bottom: 0;
 }
 
+.title-header p {
+    margin-top: -10px;
+    font-family: 'DrWho42', Arial;
+    font-size: 2em;
+    
+}
 .content {
     margin-inline: 1rem;
 }
