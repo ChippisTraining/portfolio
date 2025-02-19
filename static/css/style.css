@@ -150,3 +150,71 @@ body h1 {
     max-width: 1200px;
     margin-inline: auto;
 }
+
+.meme-section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.meme-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--secondary-gray-bg);
+
+    position: relative;
+}
+
+.meme-section-card-img {
+    object-fit: cover;
+}
+
+.meme-section-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.meme-section-card-control {
+    position: absolute;
+    
+    top: 90%;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.meme-section-card-control .md-copy-btn,
+.meme-section-card-control .raw-copy-btn,
+.meme-section-card-control .download-btn {
+    border: none;
+    color: white;
+
+    transition: 300ms;
+}
+
+.meme-section-card-control .md-copy-btn:hover,
+.meme-section-card-control .raw-copy-btn:hover,
+.meme-section-card-control .download-btn:hover {
+    background: #333333;
+}
+
+.meme-section-card-control .md-copy-btn:active,
+.meme-section-card-control .raw-copy-btn:active,
+.meme-section-card-control .download-btn:active {
+    background-color: black;
+}
+
+.meme-section-card-control .md-copy-btn {
+    background: var(--secondary-color);
+}
+
+.meme-section-card-control .raw-copy-btn {
+    background: var(--primary-color);
+}
+
+.meme-section-card-control .download-btn {
+    background: var(--secondary-gray-dark)
+}
