@@ -44,7 +44,6 @@ body {
     font-family: 'Ubuntu', Arial;
     height: 5000px;
     padding-top: 50px;
-    padding-left: 200px;
 
     color: var(--primary-font-color);
 }
@@ -53,42 +52,38 @@ body h1 {
     margin-left: 50px;    
 }
 
-.title {
+.hero-section {
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 
-    margin-top: -40px;
-    width: 1fr;
-    height: 100vh;
-    
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    
-    margin-left: -8px;
-    margin-right: -8px;
+    padding-block: 15rem;
+    width: 100%;
     
     box-shadow: 0px 0px 10px 0px var(--index-shadow-color);
-    background-color: var(--index-title-bg);
+    background: var(--index-title-bg);
 
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.title img {
-    height: 120%;
-    object-fit: 100px 100px;
+.hero-section .hero-section-bg  {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
-.title-header {
-    position: absolute;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero-section .hero-section-inner {
+    z-index: 5;
 }
 
 .title-header img {
@@ -112,63 +107,115 @@ body h1 {
     margin-inline: 1rem;
 }
 
-.quote-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.quote {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.quote-img {
-    flex-shrink: 0;
-    width: 120px;
-}
-
-.quote-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.quote-content {
-    flex: 1;
+.quote-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+
+    padding-block: 8rem;
+    gap: 1rem;
 }
 
-.quote-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: 'Dalek', Arial;
+.quote-section-item {
+    display: flex;
+
+    gap: 1rem;
+    background: var(--secondary-gray-bg);
 }
 
-.quote-text {
-    font-size: 1em;
-    line-height: 1.5;
+.quote-section-item-img {
+    height: 15rem;
+    object-fit: cover;
 }
 
-.quote-overflow {
-    font-size: 0.9em;
-    color: #ccc;
+.quote-section-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1rem;
 }
 
-.quote-author {
-    font-size: 0.9em;
-    font-style: italic;
-    font-family: 'DrWho42', Arial;
-    color: #aaa;
-    margin-top: 10px;
+.quote-section-item-content-title {}
+
+.quote-section-item-content-text {
+    overflow: auto;
 }
 
+.quote-section-item-content-author {
+    padding-bottom: 1rem;
+}
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.meme-section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+.meme-section-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--secondary-gray-bg);
+
+    position: relative;
+}
+
+.meme-section-card-img {
+}
+
+.meme-section-card-img img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.meme-section-card-control {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 2rem;
+}
+
+.meme-section-card-control .md-copy-btn,
+.meme-section-card-control .raw-copy-btn,
+.meme-section-card-control .download-btn {
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    transition: 300ms;
+}
+
+.meme-section-card-control .md-copy-btn:hover,
+.meme-section-card-control .raw-copy-btn:hover,
+.meme-section-card-control .download-btn:hover {
+    background: #333333;
+}
+
+.meme-section-card-control .md-copy-btn:active,
+.meme-section-card-control .raw-copy-btn:active,
+.meme-section-card-control .download-btn:active {
+    background-color: black;
+}
+
+.meme-section-card-control .md-copy-btn {
+    background: var(--secondary-color);
+}
+
+.meme-section-card-control .raw-copy-btn {
+    background: var(--primary-color);
+}
+
+.meme-section-card-control .download-btn {
+    background: var(--secondary-gray-dark)
+}

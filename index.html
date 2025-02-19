@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="./static/css/navigation.css">
     <link rel="stylesheet" href="./static/css/sidebar.css">
-
-    <style>
-        body {
-            padding-inline: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,7 +19,7 @@
 
         <nav class="navigation">
             <a class="item current" href="/">Home</a>
-            <a class="item" href="/about.html">About Me</a>
+            <a class="item" href="/who.html">Who</a>
             <a class="item" href="/contact.html">Contact</a>
             <a class="item" href="/projects.html">Projects</a>
             <a class="item" href="/game.html">Game</a>
@@ -34,28 +28,23 @@
     </header>
 
     <main>
-        <div class="title">
-            <img src="./static/assets/vortex.jpg" alt="the time vortex from dr who"
-                onclick="window.open('https://youtu.be/z75qvDtbxjQ', '_blank')">
-            <div class="title-header">
-                <img src="./static/assets/logo-color.png" alt="Logo" class="title-logo">
+        <section class="hero-section">
+            <img class="hero-section-bg" src="./static/assets/vortex.jpg" alt="the time vortex from dr who">
+            <div class="hero-section-inner">
                 <h1>The Portfolio</h1>
                 <p>
                     Wait, The Portfolio... for WHO<br>
                     no dont say this is some dr who stuff
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div class="quote-container">
-
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/9-doctor.jpg" alt="The 9th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">HTML & CSS—Nice and Simple. Or So They Say.</h2>
-                    <p class="quote-text">
+        <section class="quote-section container">
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/9-doctor.jpg" alt="The 9th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">HTML & CSS—Nice and Simple. Or So They Say.</h2>
+                    <p class="quote-section-item-content-text">
                         HTML? Fine. Nice and simple. It’s just boxes inside boxes, easy peasy. CSS? Now that’s a
                         different story.
                         CSS is a wee bit of a show-off, always trying to be fancy.
@@ -63,124 +52,116 @@
                         Yeah? Well, float this: Half the time, you tell CSS to do something, and it just laughs in your
                         face.
                     </p>
-                    <div class="quote-author">— The 9th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 9th Doctor</div>
                 </div>
             </div>
 
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/10-doctor.jpg" alt="The 10th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">JavaScript? Ohhh, JavaScript is Mad.</h2>
-                    <p class="quote-text">
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/10-doctor.jpg" alt="The 10th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">JavaScript? Ohhh, JavaScript is Mad.</h2>
+                    <p class="quote-section-item-content-text">
                         HTML and CSS? Pffft. Simple stuff. But JavaScript? JavaScript is like trying to have a
                         conversation with
                         a hyperactive squirrel. You tell it one thing, it does another.
                         You try to keep it contained, and suddenly, it's off in the distance,
                         throwing errors you’ve never even heard of!
-                    </p>
-                    <p class="quote-overflow">
+                        <br>
                         You blink, and there’s a floating div. You blink again, and your entire layout’s gone.
                         One minute, everything works. The next, boom—undefined. Undefined! What does that even mean?!
                     </p>
-                    <div class="quote-author">— The 10th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 10th Doctor</div>
                 </div>
             </div>
 
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/11-doctor.jpg" alt="The 11th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">Oi, JavaScript’s Brilliant! If You Know What You’re Doing.</h2>
-                    <p class="quote-text">
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/11-doctor.jpg" alt="The 11th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">Oi, JavaScript’s Brilliant! If You Know What You’re
+                        Doing.</h2>
+                    <p class="quote-section-item-content-text">
                         Alright, alright! Yes, JavaScript’s a bit... unpredictable. But that’s what makes it fun!
                         It’s like a good timey-wimey paradox—you don’t fight it, you go with it.
                         Embrace the chaos, Ten! It’s just a matter of knowing how to talk to it.
-                    </p>
-                    <p class="quote-overflow">
-                        Bit of a conversation, really. You say "please," it says "maybe." You threaten it, and suddenly
+                        <br>
+                        Bit of a conversation, really. You say "please," it says "maybe." You threaten it, and
+                        suddenly
                         it listens.
                         And if it doesn't? Well, that’s why we have console logs.
                     </p>
-                    <div class="quote-author">— The 11th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 11th Doctor</div>
                 </div>
             </div>
 
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/10-doctor.jpg" alt="The 10th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">I Am Talking to It! It’s Just Laughing at Me!</h2>
-                    <p class="quote-text">
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/10-doctor.jpg" alt="The 10th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">I Am Talking to It! It’s Just Laughing at Me!
+                    </h2>
+                    <p class="quote-section-item-content-text">
                         Oh yeah, because JavaScript totally respects politeness.
                         "Oh, please work, kind sir!" And what does it do? Throws an error anyway!
                         “Unexpected token this.” Unexpected?! Unexpected for WHO?
                         I literally just wrote it, how is it unexpected?
-                    </p>
-                    <p class="quote-overflow">
+                        <br>
                         And don’t even get me started on asynchronous nonsense! "Oh, let’s wait for this thing."
                         "Oops, too late! It’s already broken!" Absolute nightmare.
                     </p>
-                    <div class="quote-author">— The 10th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 10th Doctor</div>
                 </div>
             </div>
 
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/11-doctor.jpg" alt="The 11th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">Oh, Stop Whining! It’s Called "Asynchronous" For a Reason!</h2>
-                    <p class="quote-text">
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/11-doctor.jpg" alt="The 11th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">Oh, Stop Whining! It’s Called "Asynchronous" For
+                        a Reason!</h2>
+                    <p class="quote-section-item-content-text">
                         It’s not magic, Ten! It’s a feature!
-                        JavaScript doesn't wait around, it gets on with it. You just need to know how to handle it!
+                        JavaScript doesn't wait around, it gets on with it. You just need to know how to
+                        handle it!
                         Promises, async/await—use them properly and it all makes sense.
                     </p>
-                    <div class="quote-author">— The 11th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 11th Doctor</div>
                 </div>
             </div>
 
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/12-doctor.jpg" alt="The 12th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">Och, Would Ye All Just Shut Up? Python’s Better.</h2>
-                    <p class="quote-text">
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/12-doctor.jpg" alt="The 12th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">Och, Would Ye All Just Shut Up? Python’s Better.
+                    </h2>
+                    <p class="quote-section-item-content-text">
                         Listen to yourselves! "Ohh, JavaScript’s chaotic!" "Ohh, HTML is a mess!"
                         Ye know what’s not a mess? Python. Python just works. Ye tell it something,
                         and it does it. None of this asynchronous nonsense—just nice, readable code.
-                    </p>
-                    <p class="quote-overflow">
-                        One line, job done. No curly brackets, no semicolons, no crying into your tea because JavaScript
+                        <br>
+                        One line, job done. No curly brackets, no semicolons, no crying into your tea
+                        because JavaScript
                         decided it didn’t like your syntax today. Aye, simple.
                     </p>
-                    <div class="quote-author">— The 12th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 12th Doctor</div>
                 </div>
             </div>
 
-            <div class="quote">
-                <div class="quote-img">
-                    <img src="./static/assets/who/13-doctor.jpg" alt="The 13th Doctor">
-                </div>
-                <div class="quote-content">
-                    <h2 class="quote-title">Oi, All of You—Shut It!</h2>
-                    <p class="quote-text">
-                        Honestly, you lot! Fighting about programming languages like it’s some kind of
+            <div class="quote-section-item">
+                <img class="quote-section-item-img" src="./static/assets/who/13-doctor.jpg" alt="The 13th Doctor">
+                <div class="quote-section-item-content">
+                    <h2 class="quote-section-item-content-title">Oi, All of You—Shut It!</h2>
+                    <p class="quote-section-item-content-text">
+                        Honestly, you lot! Fighting who programming languages like it’s some kind
+                        of
                         galactic war. Get a grip! They all have their uses.
                         JavaScript’s weird but powerful. Python’s easy but slow. HTML and CSS?
                         Essential.
+                        <br>
+                        So! How who we stop bickering and just get back to writing some code,
+                        yeah?
                     </p>
-                    <p class="quote-overflow">
-                        So! How about we stop bickering and just get back to writing some code, yeah?
-                    </p>
-                    <div class="quote-author">— The 13th Doctor</div>
+                    <div class="quote-section-item-content-author">— The 13th Doctor</div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 
