@@ -135,7 +135,7 @@ body h1 {
     padding-right: 1rem;
 }
 
-.quote-section-item-content-title {}
+/* .quote-section-item-content-title {} */
 
 .quote-section-item-content-text {
     overflow: auto;
@@ -157,6 +157,20 @@ body h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding-block: 2rem;
+}
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+    .meme-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 776px) {
+    .meme-section {
+        grid-template-columns: 1fr;
+    }
 }
 
 .meme-section-card {
@@ -185,7 +199,7 @@ body h1 {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 2rem;
-}
+}  
 
 .meme-section-card-control .md-copy-btn,
 .meme-section-card-control .raw-copy-btn,
