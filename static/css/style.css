@@ -135,7 +135,7 @@ body h1 {
     padding-right: 1rem;
 }
 
-.quote-section-item-content-title {}
+/* .quote-section-item-content-title {} */
 
 .quote-section-item-content-text {
     overflow: auto;
@@ -159,6 +159,20 @@ body h1 {
     padding-block: 2rem;
 }
 
+/* TABLET */
+@media screen and (max-width: 1024px) {
+    .meme-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 776px) {
+    .meme-section {
+        grid-template-columns: 1fr;
+    }
+}
+
 .meme-section-card {
     display: flex;
     flex-direction: column;
@@ -166,15 +180,16 @@ body h1 {
     justify-content: space-between;
 
     background-color: var(--secondary-gray-bg);
-
-    position: relative;
 }
 
 .meme-section-card-img {
+    width: 100%;
+    height: 14rem;
 }
 
 .meme-section-card-img img {
-    height: 100%;
+    object-fit: contain;
+    height: 14rem;
     width: 100%;
     cursor: pointer;
 }
@@ -184,7 +199,7 @@ body h1 {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 2rem;
-}
+}  
 
 .meme-section-card-control .md-copy-btn,
 .meme-section-card-control .raw-copy-btn,
@@ -218,4 +233,32 @@ body h1 {
 
 .meme-section-card-control .download-btn {
     background: var(--secondary-gray-dark)
+}
+
+.mad-p {
+    font-size: 1rem;
+    padding-block: 4rem;
+    padding-inline: 1rem;
+    font-family: 'DrWho42', Arial;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 0, 0.345);
+}
+
+.mad-p::before {
+    content: "REAM IF U DARE... 100% worth ur time... i promise... i guess: ";
+    font-family: 'DrWho42', Arial;
+    color: var(--primary-color)
+}
+
+.mad-p::selection {
+    color: rgba(255, 255, 0, 0.02);
+}
+
+li {
+    font-family: 'Dalek' Arial;
+    color: #E95420;
+}
+
+li:not(:not(:not(:not(:not(:not(:not(:not(:not(:not(:not(:not(:hover)))))))))))) {
+    opacity: 0.5;
 }
