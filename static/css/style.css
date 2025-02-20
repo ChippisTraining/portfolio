@@ -234,3 +234,22 @@ body h1 {
 .meme-section-card-control .download-btn {
     background: var(--secondary-gray-dark)
 }
+
+p {
+    font-size: 1rem;
+    padding-block: 4rem;
+    padding-inline: 1rem;
+    font-family: 'DrWho42', Arial;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 0, 0.345);
+}
+
+p::before {
+    content: "REAM IF U DARE... 100% worth ur time... i promise... i guess: ";
+    font-family: 'DrWho42', Arial;
+    color: var(--primary-color)
+}
+
+p::selection {
+    color: rgba(255, 255, 0, 0.02);
+}
