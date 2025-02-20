@@ -253,3 +253,13 @@ body h1 {
 .mad-p::selection {
     color: rgba(255, 255, 0, 0.02);
 }
+
+
+li {
+    font-family: 'Dalek' Arial;
+    color: #E95420;
+}
+
+li:not(:hover) {
+    opacity: 0.5;
+}
